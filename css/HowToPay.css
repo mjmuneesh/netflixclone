@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    /* overflow-x: hidden; */
+
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.logo img {
+
+    height: 85px;
+    margin-left: 30px;
+}
+
+.sign-in-button {
+    background-color: rgb(230, 18, 18);
+    color: rgb(227, 227, 227);
+    border: none;
+    padding: 5px 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+   
+}
+
+.sign-in-button:hover {
+    background-color: #bd2020;
+    cursor: pointer;
+}
+
+hr{
+    opacity: 0.5;
+    margin-top: -10px;
+}

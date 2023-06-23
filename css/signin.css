@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:ital,wght@0,300;0,900;1,100&family=Rubik+Puddles&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+ 
+}
+
+.logo img {
+
+  height: 85px;
+  margin-left: 30px;
+}
+
+.sign-in-button {
+  background-color: rgb(230, 18, 18);
+  color: rgb(227, 227, 227);
+  border: none;
+  padding: 5px 20px;
+  margin-right: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+ 
+}
+
+.sign-in-button:hover {
+  background-color: #bd2020;
+  cursor: pointer;
+}
+
+.firstSection {
+  height: 100%;
+  background-image: url("../img/imageedit_1_2940806777.jpg");
+}
+
+.signInForm {
+  height: 80%;
+  width: 35% !important;
+  margin: 0 auto;
+  color: white;
+  background: rgb(0, 0, 0, 0.9);
+  border-radius: 5px;
+  padding: 80px 80px !important;
+}
+
+.signInForm .error {
+  font-size: calc(6px + 0.390625vw);
+  background-color: orange;
+  padding: calc(5px + 0.390625vw);
+  border-radius: 5px;
+  display: none;
+}
+
+.signInForm .error a {
+  color: white;
+}
+
+.signInForm h3 {
+  font-weight: bold;
+}
+
+.signInForm .form-control:focus {
+  box-shadow: none;
+}
+
+.signInForm #help {
+  text-decoration: none;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.signInForm .signin {
+  width: 100%;
+  background-color: #ff0000;
+  color: white;
+}
+
+.signInForm #signup {
+  cursor: pointer;
+}
+.signInForm .signin:hover {
+  background-color: #ff3333;
+  color: white;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 360px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    height: max-content;
+    width: 100% !important;
+    padding: 20px 20px !important;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 460px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    height: max-content;
+    width: 100% !important;
+    padding: 20px 20px !important;
+  }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 800px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    width: 80% !important;
+    padding: 60px 40px !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 960px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    width: 60% !important;
+    padding: 60px 40px !important;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    width: 40% !important;
+    padding: 60px 40px !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1980px) {
+  .firstsection {
+    height: auto;
+  }
+
+  .signInForm {
+    width: 30% !important;
+    padding: 60px 40px !important;
+  }
+}
+
+.footer{
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 10px solid rgba(101, 86, 86, 0.721);
+  
+}
+.list-unstyled li{
+  margin-top: 10px;
+}
+.list-unstyled a{
+  color: #8d8d8d;
+  text-decoration: none;
+}
+.list-unstyled a:hover{
+  text-decoration: underline;
+}
+.f-row{
+  padding-bottom: 4%;
+}
+.f-row h5{
+  margin-bottom: 20px;
+}
+.copyright{
+  color: #8d8d8d;
+  padding-bottom: 15px;
+}
+.footer-button button{
+  background-color: #000000;
+  color: #8d8d8d;
+  outline: none;
+  border: 1px solid #8d8d8d;
+  margin-bottom: 10px;
+}
+.footer-button button:hover{
+  color: #fff;
+}
+.footer .icons i{
+margin-right: 15px;
+margin-bottom: 20px;
+}
+.footer .icons i:hover{
+  cursor: pointer;
+}

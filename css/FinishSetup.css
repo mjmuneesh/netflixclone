@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    /* overflow-x: hidden; */
+
+}
+.page1 {
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.logo img {
+
+    height: 85px;
+    margin-left: 30px;
+}
+
+.sign-in-button {
+    background-color: rgb(230, 18, 18);
+    color: rgb(227, 227, 227);
+    border: none;
+    padding: 5px 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+   
+}
+
+.sign-in-button:hover {
+    background-color: #bd2020;
+    cursor: pointer;
+}
+
+hr{
+    opacity: 0.5;
+    margin-top: -10px;
+}
+.container{
+    margin-top: 10%;
+    padding: 0px 10px;
+    margin-bottom: 150px; 
+    width: 400px;
+
+}
+
+.img1 img{
+    height: 67px;
+    width: 310px;
+}
+.detail{
+word-wrap: break-word;
+}
+.next{
+    background-color: rgb(230, 18, 18);
+    color: rgb(227, 227, 227);
+    border: none;
+    padding: 5px 20px;
+   margin-left: 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+}
+
+.footer{
+    background-color:  #cdc6c66c;
+    color: #4e4e4ebb;
+    
+}
+.list-unstyled li{
+    margin-top: 10px;
+}
+.list-unstyled a{
+    color: #4e4e4ebb;
+}
+.netflix-footer{
+    margin-top: 40px;
+    /* padding-bottom: 10%; */
+}
+.row h5{
+    margin-bottom: 20px;
+
+}

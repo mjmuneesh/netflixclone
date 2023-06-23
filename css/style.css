@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #000000;
+    overflow-x: hidden;
+
+}
+.page1 {
+    background-image: url(../img/imageedit_1_2940806777.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    /* width: 140px; */
+    height: 85px;
+    margin-left: 30px;
+}
+
+.sign-in-button {
+    background-color: rgb(230, 18, 18);
+    color: rgb(227, 227, 227);
+    border: none;
+    padding: 5px 20px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-in-button:hover {
+    background-color: #bd2020;
+    cursor: pointer;
+}
+
+#firstpage {
+    padding: 15px 20px;
+    color: white;
+    margin-top: 10%;
+    margin-left: 18%;
+    font-size: 20px;
+}
+
+#Get-Started {
+    background-color: rgb(230, 18, 18);
+    color: rgb(227, 227, 227);
+    border: none;
+    padding: 5px 20px;
+    /* margin-right: 50px; */
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#Get-Started:hover {
+    background-color: #bd2020;
+    cursor: pointer;
+}
+
+.para {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20%;
+}
+ .para2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+ }
+
+#heading {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.login{
+    margin-left:12%;
+    margin-left: 20%;
+}
+
+.login input{
+
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    opacity: 0.7;
+}
+.login input::placeholder{
+    color: #fff;
+}
+
+#features-section{
+    border-top: 10px solid rgba(101, 86, 86, 0.721);
+    
+}
+
+#Enjoy-tv{
+    margin-top: 13%;
+    color: #fff;
+    width: 45%;
+    word-wrap: break-word;
+   
+}
+
+.secondPage{
+    background-color: rgb(8, 10, 10);
+}
+ .accordion{
+    background-color: black;
+    margin-bottom: 60px;
+ }
+
+ .accordion h2{
+    color: #fff;
+ }
+ .accordion .card{
+    background-color: transparent;
+ }
+ .card-header{
+    background-color: rgba(19, 33, 68, 1);
+    color: #fff;
+    font-size: 20px;
+ }
+
+ .card-header:hover{
+    background-color: rgb(34, 30, 95);
+ }
+
+ .card-body{
+    background-color: rgba(19, 33, 68, 1);
+    color: #fff;
+ }
+.membership{
+    margin-left: 28%;
+}
+.membership h5{
+    color: #fff;
+}
+.membership input{
+    border: 1px solid white;
+    width: 400px;
+    height: 40px;
+    background-color: #000000;
+    color: #fff;
+    margin-left: 5%;
+}
+.membership input::placeholder{
+    color: #fff;
+}
+.membership #btn{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(230, 18, 18);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 8x;
+}
+
+.membership #btn:hover{
+    background-color: #bd2020;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: #cecece;
+    
+}
+.list-unstyled li{
+    margin-top: 10px;
+}
+.list-unstyled a{
+    color: #cecece;
+}
+.netflix-footer{
+    margin-top: 40px;
+    padding-bottom: 10%;
+}
+.row h5{
+    margin-bottom: 20px;
+
+}
