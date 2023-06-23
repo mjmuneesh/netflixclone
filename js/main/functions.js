@@ -32,8 +32,8 @@ export async function setDetails(item) {
 export function DisplayPoster(item, number) {
     setDetails(item)
     if (item.trailer) {
-
-        let values = [item.id, item.trailer, item.type, item.genres]
+        let name = item.title? item.title: item.name;
+        let values = [item.id, item.trailer, item.type, item.genres,item.overview.split(",").join(" "),name]
 
         $(`#slide-${number}`).append(`
         <div class="item" values = "${values}">
@@ -43,10 +43,10 @@ export function DisplayPoster(item, number) {
 
 }
 
-export function HoverItem(id, trailer, type, genres) {
+export function HoverItem(id, trailer, type, genres,overview,name) {
 
     $(".crousel-section").append(
-        `<div class="hover-Item" values="${[id, trailer, type, genres]}">
+        `<div class="hover-Item" values="${[id, trailer, type, genres,overview,name]}">
          <div class="HoverTrailer"> 
          <div id="HoverVideo"></div>
          </div>
@@ -71,14 +71,33 @@ export function showContent(trailer) {
                 <i class="material-icons play" style="cursor:pointer">play_arrow</i>
                 <i class="material-icons volume" style="cursor:pointer">volume_off</i>
             </div>
+           
         </div>`
     );
     onYouTubeIframeAPIReady("displayVideo",2, trailer);
 }
 
 
-export function info(){
+export function info(id,trailer,type,genres,overview,name){
     $("#Info-Movie").append(`
-    
+    <div id="MoreInfo">
+    <div class="video-container">
+    <i class="material-icons" id="closeBtn">close</i>
+        <div id="more-Trailer">
+        
+        </div>
+        <div class="Options" id="3" values="${[id, trailer, type, genres]}">
+            <p>${name}</p>
+            <i class="material-icons play" style="cursor:pointer">play_arrow</i>
+            <i class="material-icons list" style="cursor:pointer">add_circle_outline</i>
+            <i class="material-icons like" style="color:black; text-shadow: 0 0 2px #fff; cursor:pointer">thumb_up</i>
+            <i class="material-icons volume" style="cursor:pointer;float:right;">volume_off</i>
+        </div>
+        <p class="overview mt-5 text-white">
+        ${overview}
+        </p>
+    </div>
+    </div>
     `)
+    onYouTubeIframeAPIReady("more-Trailer",3, trailer);
 }

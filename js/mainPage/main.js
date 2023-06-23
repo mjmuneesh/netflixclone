@@ -5,7 +5,7 @@ import { owlCarousel } from "../main/owlCarousel.js";
 import { createPoster } from "./crousel-poster.js";
 import { header } from "../header.js";
 import { footer } from "../footer.js";
-import { HoverItem, showContent} from "../main/functions.js";
+import { HoverItem, showContent, info} from "../main/functions.js";
 
 header();
 footer();
@@ -31,8 +31,8 @@ createPoster();
 owlCarousel(jQuery);
 
 $(".crousel-section").on("mouseenter",".item", function(){
-    let [id,trailer,type,genres ] = $(this).attr("values").split(",");
-    HoverItem(id,trailer,type,genres);
+    let [id,trailer,type,genres,overview,name ] = $(this).attr("values").split(",");
+    HoverItem(id,trailer,type,genres,overview,name);
     $(".hover-Item").css("top",$(this).offset().top- $(".crousel-section").offset().top-40)
     $(".hover-Item").css("left",$(this).offset().left- $(".crousel-section").offset().left-30)
 })
@@ -53,3 +53,13 @@ $("#movieShow").on("click","#closeBtn", function(){
     $("#movieVideo").remove();
 });
 
+$(document).on("click",".details", function(){
+
+    let [id,trailer,type,genres,overview,name] = $(this).parent().attr("values").split(",");
+
+    info(id,trailer,type,genres,overview,name);
+});
+
+$("#Info-Movie").on("click","#closeBtn", function(){
+    $("#MoreInfo").remove();
+});

@@ -15,7 +15,7 @@ export function onYouTubeIframeAPIReady(container,index,id) {
         players[index]=player;
       }
 
-$(".main-video").on("click",".volume",function(){
+$(document).on("click",".volume",function(){
     let index = parseInt($(this).parent().attr("id"))
    if (players[index].isMuted()){
     $(this).html("volume_up");
